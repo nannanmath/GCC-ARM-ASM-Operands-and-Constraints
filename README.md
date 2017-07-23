@@ -1,5 +1,5 @@
-A Complete List of GCC ARM Assembly Operand Modifiers and Constraints  
-(The .txt document is formatted better.)  
+# A Complete List of GCC ARM Assembly Operand Modifiers and Constraints  
+(Note: the .txt document is formatted better.)  
 
 Valid as of Saturday, July 22, 2017.  
 
@@ -83,8 +83,10 @@ Address constraints
 ########################## ARM-SPECIFIC CONSTRAINTS #######################  
 ########################################################################  
 
-NOTE: Anything marked @internal should NOT BE USED in inline asm statements.  
-These are purely included for edification and completeness.  
+////////////////////////////////////////////////////////////////////////////////////////////////  
+#### NOTE: Anything marked @internal should NOT BE USED in inline asm statements.  
+These are included purely for edification and completeness.  
+////////////////////////////////////////////////////////////////////////////////////////////////  
 
 The following register constraints have been used:  
  - in ARM/Thumb-2 state: t, w, x, y, z  
