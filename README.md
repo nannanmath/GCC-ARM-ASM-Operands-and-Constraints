@@ -4,7 +4,7 @@ A Complete List of GCC ARM Assembly Operand Modifiers and Constraints
 Valid as of Saturday, July 22, 2017.  
 
 #######################################################################  
-######################## ASM Operand modifiers ########################  
+########################## ASM Operand modifiers ##########################  
 #######################################################################  
 
 Valid operand modifiers for use in asm statements.
@@ -32,7 +32,7 @@ Example: Using %P[thing] in an asm instruction explicitly defines that a double 
 Above operands were found in LLVM's ARMAsmPrinter.cpp.  
 
 #######################################################################  
-############## Input/Output Operand Constraint Modifiers ##############  
+################### Input/Output Operand Constraint Modifiers ###################  
 #######################################################################  
 
 These are placed in front of constraints in operands if needed (like "=r" for a write-only output general register)  
@@ -43,7 +43,7 @@ These are placed in front of constraints in operands if needed (like "=r" for a 
 "%" : This operand and the next operand are commutative (order interchangeable).  
 
 #######################################################################  
-######################## GCC Common Constraints #######################  
+########################## GCC Common Constraints #########################  
 #######################################################################  
 
 Register constraints  
@@ -80,7 +80,7 @@ Address constraints
 "p" : Matches a general address.  
 
 ########################################################################  
-######################## ARM-SPECIFIC CONSTRAINTS ######################  
+########################## ARM-SPECIFIC CONSTRAINTS #######################  
 ########################################################################  
 
 NOTE: Anything marked @internal should NOT BE USED in inline asm statements.  
