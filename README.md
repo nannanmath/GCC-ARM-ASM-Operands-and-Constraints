@@ -35,7 +35,7 @@ Above operands were found in LLVM's ARMAsmPrinter.cpp.
 ################### Input/Output Operand Constraint Modifiers ###################  
 #######################################################################  
 
-These are placed in front of constraints in operands if needed (like "=r" for a write-only output general register)  
+These are placed in front of constraints in operands if needed (like "=r" for a write-only output general register).  
 
 "=" : Can write to the operand only.  
 "+" : Can read from and write to the operand.  
@@ -59,20 +59,20 @@ Memory constraints
 Normal constraints  
 
 "0-9" : Use this operand for the #th operand (for example: asm("mov %0, r1" : "=r" (value) : "0" (value)); means use the same (value) register that is used for input for output)  
-  (#) Similar to +  
+&nbsp;&nbsp;&nbsp;&nbsp;(#) Similar to +  
 "V" : Matches a non-offsettable memory reference.  
-  (#) "V" matches TARGET_MEM_CONSTRAINTs that are rejected by "o".  
-  (#) This means that it is not a memory constraint in the usual sense, since reloading the address into a base register would make the address offsettable.  
-  (#) "o" and "V" are  like components of "m" in a way.  
+&nbsp;&nbsp;&nbsp;&nbsp;(#) "V" matches TARGET_MEM_CONSTRAINTs that are rejected by "o".  
+&nbsp;&nbsp;&nbsp;&nbsp;(#) This means that it is not a memory constraint in the usual sense, since reloading the address into a base register would make the address offsettable.  
+&nbsp;&nbsp;&nbsp;&nbsp;(#) "o" and "V" are  like components of "m" in a way.  
 "<" : Matches a pre-dec or post-dec operand.  
 ">" : Matches a pre-inc or post-inc operand.  
-  (#) Like "V", "<" and ">" are not memory constraints, since reloading the address into a base register would cause it not to match.  
+&nbsp;&nbsp;&nbsp;&nbsp;(#) Like "V", "<" and ">" are not memory constraints, since reloading the address into a base register would cause it not to match.  
 "i" : Matches a general integer constant.  
 "s" : Matches a symbolic integer constant.  
 "n" : Matches a non-symbolic integer constant.  
 "E" : Matches a floating-point constant.  
 "F" : Matches a floating-point constant.  
-  (#) There is no longer a distinction between "E" and "F".  
+&nbsp;&nbsp;&nbsp;&nbsp;(#) There is no longer a distinction between "E" and "F".  
 "X" : Matches anything.  
 
 Address constraints  
@@ -84,7 +84,7 @@ Address constraints
 ########################################################################  
 
 ////////////////////////////////////////////////////////////////////////////////////////////////  
-#### NOTE: Anything marked @internal should NOT BE USED in inline asm statements.  
+### NOTE: Anything marked @internal should NOT BE USED in inline asm statements.  
 These are included purely for edification and completeness.  
 ////////////////////////////////////////////////////////////////////////////////////////////////  
 
@@ -144,7 +144,7 @@ Normal constraints
 
 @internal The ARM state version is internal...  
 @internal In ARM/Thumb-2 state a constant in the range 0-32 or any power of 2.  
-  (#) The above two lines are not typos.  
+&nbsp;&nbsp;&nbsp;&nbsp;(#) The above two lines are not typos.  
 @internal "Pj" : A 12-bit constant suitable for an ADDW or SUBW instruction. (Thumb-2)  
 @internal "PJ" : A constant that satisfies the Pj constrant if negated.  
 @internal "Pa" : In Thumb-1 state a constant in the range -510 to 510.  
@@ -192,7 +192,7 @@ Memory constraints
 @internal "Q" : An address that is a single base register.  
 @internal "Uu" : In Thumb state an address that is valid in 16bit encoding.  
 @internal "Uw" : In Thumb state an address that is valid in 16bit encoding, and that can be used for unaligned accesses.  
-  (#) The 16-bit post-increment LDR/STR accepted by thumb1_legitimate_address_p are actually LDM/STM instructions, so cannot be used to access unaligned data.  
+&nbsp;&nbsp;&nbsp;&nbsp;(#) The 16-bit post-increment LDR/STR accepted by thumb1_legitimate_address_p are actually LDM/STM instructions, so cannot be used to access unaligned data.  
 @internal "US" : US is a symbol reference.  
 @internal "Uz" : A memory access that is accessible as an LDC/STC operand.  
 
