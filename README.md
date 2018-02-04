@@ -1,4 +1,4 @@
-# A Complete List of GCC ARM Assembly Operand Modifiers and Constraints  
+## A Complete List of GCC ARM Assembly Operand Modifiers and Constraints  
 (Note: the .txt document is formatted better.)  
 
 Valid as of Saturday, July 22, 2017.  
