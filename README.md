@@ -1,5 +1,5 @@
 ## A Complete List of GCC ARM Assembly Operand Modifiers and Constraints  
-(Note: the .txt document is formatted better.)  
+(Note: the .txt documents are formatted better. The "CRLF" version is for Windows users.)  
 
 Valid as of Saturday, July 22, 2017.  
 
